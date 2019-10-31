@@ -6,7 +6,7 @@ package edu.cofc.csci230;
  * List interface that "closely" resembles the List interface
  * in the java.util package 
  * 
- * http://docs.oracle.com/javase/8/docs/api/java/util/List.html
+ * http://docs.oracle.com/javase/7/docs/api/java/util/List.html
  * 
  * @author CSCI 230: Data Structures and Algorithms Fall 2018
  *
@@ -77,5 +77,19 @@ public interface List <AnyType> {
 	 * 
 	 */
 	public void clear();
+	
+	/**
+	 * swaps to elements in a list at index 
+	 * position i and j.
+	 * 
+	 * For example, 
+	 * 	if A = 1->2->3->4->5 and swap( 1, 3 ) is executed
+	 * 	then A = 1->4->3->2->5
+	 *
+	 * @param i
+	 * @param j
+	 * @throws IndexOutOfBoundsException
+	 */
+	public void swap( int i, int j );
 
 } // end List interface definition
