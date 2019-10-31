@@ -8,7 +8,7 @@ package edu.cofc.csci230;
  *
  * @param <AnyType>
  */
-public class DoublyLinkedList<AnyType extends Comparable<AnyType>> implements List<AnyType> {
+public class test<AnyType extends Comparable<AnyType>> implements List<AnyType> {
     
     // instance variables
     private Node<AnyType> headNode = null;
@@ -382,7 +382,7 @@ public class DoublyLinkedList<AnyType extends Comparable<AnyType>> implements Li
         
         DoublyLinkedList<Integer> list = new DoublyLinkedList<Integer>();
         
-        System.out.println( list );
+        System.out.println( list.get(0) );
         
         list.add(0,1); list.printList();
         System.out.println("-------------------");

@@ -1,7 +1,5 @@
 package edu.cofc.csci230;
 
- 
-
 /**
  * A node with two pointers (the next node directly in front
  * of it, and the previous node directly behind it) to be used 
